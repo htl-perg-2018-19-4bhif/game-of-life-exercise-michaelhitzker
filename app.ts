@@ -108,12 +108,12 @@ window.onload = () => {
 
   }
 
-  function live(){
-    for(let i = 0; i<cells.length; i++){
-      for(let j = 0; j<cells[i].length; j++){
-        cells[i][j] = checkCanLive(j,i);
-        if(cells[i][j]){
-          drawSingleCell(j*cellSize,i*cellSize);
+  function live() {
+    for (let i = 0; i < cells.length; i++) {
+      for (let j = 0; j < cells[i].length; j++) {
+        cells[i][j] = checkCanLive(j, i);
+        if (cells[i][j]) {
+          drawSingleCell(j * cellSize, i * cellSize);
         }
       }
     }
